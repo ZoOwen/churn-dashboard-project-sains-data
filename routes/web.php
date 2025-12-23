@@ -2,6 +2,7 @@
 use App\Http\Controllers\DatasetController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChurnDatasetController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -40,6 +41,10 @@ Route::middleware(['auth'])->group(function () {
     ->name('datasets.download');
 
 });
+
+
+//churndatasets
+Route::get('/churn-datasets', [ChurnDatasetController::class, 'index'])->name('churn-datasets.index');
 
 Route::get('/dashboardv2/menu1', function () {
     $datasets = \App\Models\Dataset::all();

@@ -15,7 +15,7 @@ return new class extends Migration
            $table->id();
 
         // nama dataset sebagai label
-        // $table->string('name');
+        $table->string('name');
 
         // file info
         $table->string('original_filename'); // nama file asli

@@ -27,7 +27,7 @@
                 <i class="fas fa-chevron-right arrow"></i>
             </a>
             <ul class="submenu">
-                <li><a href="#v11">Menu 1</a></li>
+                <li><a href="{{ route('churn-datasets.index') }}">Menu 1</a></li>
                 <li><a href="#v12">Menu 2</a></li>
             </ul>
         </li>
